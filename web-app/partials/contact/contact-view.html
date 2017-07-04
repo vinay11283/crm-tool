@@ -1,0 +1,26 @@
+<table class="table contactTable">
+    <tr>
+        <td>
+            <h3>Details for {{contact.first_name}}</h3></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Contact First Name</td>
+        <td>{{contact.first_name}}</td>
+    </tr>
+    <tr>
+      <td>Contact Last Name</td>
+      <td>{{contact.last_name}}</td>
+    </tr>
+    <tr>
+        <td>Address</td>
+        <td>{{contact.address}}</td>
+    </tr>
+    <tr>
+        <td>Phone Number</td>
+        <td>{{contact.phone_number}}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editContact({id:contact._id})">Edit</a>
+</div>

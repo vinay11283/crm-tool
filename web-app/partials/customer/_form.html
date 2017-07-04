@@ -1,0 +1,52 @@
+<div class="form-group">
+    <label for="first_Name" class="col-sm-2 control-label">First Name</label>
+    <div class="col-sm-10">
+        <input type="text" ng-model="customer.first_name" class="form-control" id="first_name" placeholder="Customer first name" required="required" />
+    </div>
+</div>
+<div class="form-group">
+    <label for="last_name" class="col-sm-2 control-label">Last Name</label>
+    <div class="col-sm-10">
+        <input type="text" ng-model="customer.last_name" class="form-control" id="last_name" placeholder="Customer last name" />
+    </div>
+</div>
+<div class="form-group">
+    <label for="email_address" class="col-sm-2 control-label">Email Address</label>
+    <div class="col-sm-10">
+        <input type="email" ng-model="customer.email_address" class="form-control" id="email_address" placeholder="Customer email address" />
+    </div>
+</div>
+<div class="form-group">
+    <label for="address" class="col-sm-2 control-label">Address</label>
+    <div class="col-sm-10">
+        <input type="text" ng-model="customer.address" class="form-control" id="address" placeholder="Address" />
+    </div>
+</div>
+<div class="form-group">
+    <label for="phone_number" class="col-sm-2 control-label">Phone Number</label>
+    <div class="col-sm-10">
+        <input type="text" ng-model="customer.phone_number" class="form-control" id="plot" placeholder="Phone Number" />
+    </div>
+</div>
+<div class="form-group">
+    <label for="Contact" class="col-sm-2 control-label">Asigned to </label>
+    <div class="col-md-5">
+      <select class="form-control" ng-model="customer.contact_id">
+          <option value="">--Select a contact--</option>
+          <option ng-repeat="contact in contacts" ng-selected="contact._id == customer.contact_id || contact._id == contact_id" value="{{contact._id}}">{{contact.first_name}}</option>
+      </select>
+
+    </div>
+    <!--
+    <div class="col-md-1">
+      <input type="button" ng-click="showModal()" class="btn btn-primary" value="Search" />
+    </div>
+  -->
+
+
+</div>
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+        <input type="submit" class="btn btn-primary" value="Save" />
+    </div>
+</div>

@@ -1,0 +1,74 @@
+body, html{
+  background: #fff;
+}
+.top-buffer {
+    margin-top: 10px;
+}
+.customerTable tr td:nth-child(2) {
+    width: 150px;
+}
+.customerTable tr:nth-child(1) td {
+    border-top: none;
+}
+a.nodecoration {
+    text-decoration: none;
+}
+
+.form-group.required .form-group.control-label:after {
+   content:"*";
+   color:red;
+}
+
+.tile-customers {
+    padding: 20px 0px 20px 0px;
+    background-color: #fff;
+    border: solid 1px;
+    border-color: #e2e2e2;
+    width: 30%;
+    margin: 0 auto;
+    height: 120px;
+    box-shadow: 0px 5px 5px #dedede;
+    -moz-border-radius: 5px/5px;
+    -webkit-border-radius: 5px/5px;
+    border-radius: 5px/5px;
+    cursor: pointer;
+    float: left;
+    clear: both;
+    text-align: center;
+}
+.tile-customers:hover {
+    background-color: lightblue;
+}
+.tile-contacts {
+    padding: 20px 0px 20px 0px;
+    background-color: #fff;
+    border: solid 1px;
+    border-color: #e2e2e2;
+    width: 30%;
+    margin: 0 auto;
+    height: 120px;
+    box-shadow: 0px 5px 5px #dedede;
+    -moz-border-radius: 5px/5px;
+    -webkit-border-radius: 5px/5px;
+    border-radius: 5px/5px;
+    cursor: pointer;
+    text-align: center;
+}
+.tile-contacts:hover {
+    background-color: lightblue;
+}
+
+@media screen and (max-width: 400px) {
+   .tile-customers {
+    float: none;
+    margin:0 auto;
+    width:auto;
+    border:0;
+  }
+  .tile-contacts {
+   float: none;
+   margin:0 auto;
+   width:auto;
+   border:0;
+ }
+}

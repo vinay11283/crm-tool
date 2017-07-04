@@ -1,0 +1,41 @@
+<div class="modal fade" ng-controller="CustomerCreateController as ctrl">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="close();" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">{{title}}</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table" ng-table="contactsTable" id="contactTable" show-filter="true">
+                  <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!--
+                    <tr ng-repeat="contact in contacts">
+                        <td><a href ng-click="assignContact(contact)" data-dismiss="modal">{{contact.first_name}}</a></td>
+                        <td>
+                            <a class="btn btn-primary" ui-sref="viewContact({id:contact._id})">View</a>
+                            <a class="btn btn-danger" ng-click="deleteContact(contact)">Delete</a>
+                        </td>
+                    </tr>
+                  -->
+                    <tr ng-repeat="contact in contacts">
+                      <td><a href ng-click="assignContact(contact)" data-dismiss="modal">{{contact.first_name}}</a></td>
+                      <td>
+                          <a class="btn btn-primary" ui-sref="viewContact({id:contact._id})">View</a>
+                          <a class="btn btn-danger" ng-click="deleteContact(contact)">Delete</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" ng-click="close()" data-dismiss="modal" class="btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
